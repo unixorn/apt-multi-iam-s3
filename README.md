@@ -10,11 +10,13 @@ Documenter: Susan Potter (@mbbx6spp on GH)
 
 ## Building
 
-Before building this project on Ubuntu (tested on 11.10) you will need to install the following packages:
+`docker build -t local/apt-multi-iam-s3:latest`
 
-    [sudo] apt-get install libapt-pkg-dev libcurl4-openssl-dev
+will build the docker container for the build environment
 
-To build this project you simply run `make`. It will produce a binary named `s3` under the `src/` dir.
+`docker run -v $(pwd)/output/:/output/ -v $(pwd):/code/ --rm -e VERSION=1.1.2 local/apt-multi-iam-s3:1 build`
+
+will build the deb and spit it into the `./output/` folder
 
 ## Installing
 
