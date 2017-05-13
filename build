@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+if [[ "$1" == "build" ]]; then
+    echo "starting build"
+    cd /code/
+    debuild -us -uc
+    cp ../apt-multi-iam-s3_${VERSION}* /output/
+else
+    echo "starting custom process"
+    exec "$@"
+fi

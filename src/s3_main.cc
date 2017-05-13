@@ -29,7 +29,7 @@ using namespace std;
 
 int main()
 {
-   setlocale(LC_ALL, "");
+   putenv("LC_ALL=C");
 
    HttpMethod Mth;
    return Mth.Loop();

@@ -1,4 +1,10 @@
-apt-multi-iam-s3 (1.1.1ubuntu2) xenial; urgency=low
+apt-multi-iam-s3 (1.1.2ubuntu2) xenial; urgency=low
+
+  * Fixed for when locale is set already
+
+ -- Connor Poole <connor.poole@daqri.com>  Fri, 12 May 2017 15:23:17 +0100
+
+apt-multi-iam-s3 (1.1.2ubuntu2) xenial; urgency=low
 
   * Renamed to avoid collision with the apt-transport-s3 included in Xenial
 

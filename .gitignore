@@ -6,3 +6,4 @@ debian/apt-multi-iam-s3
 debian/apt-multi-iam-s3.substvars
 debian/apt-multi-iam-s3.debhelper.log
 *~
+output/
